@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="pt-br" style="overflow:scroll">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:image" itemprop="image" content="https://graph.meucatalogo.app/api/store-thumbnail/10k">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#90A4AE">
+    <meta name="description" content="Confira o meu catálogo de produtos">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Catalogo de roupas "programados para casar♥"</title>
+    <style>
+         body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #777777bd;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 20px;
+            flex: 1;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 80px auto 20px;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .product-card {
+            background: rgba(255, 255, 255, 0.282);
+            border: 1px solid #00000000;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.333% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+        }
+        .product-card p {
+            color: #666;
+            font-size: 14px;
+        }
+        .product-card .price {
+            font-size: 18px;
+            color: #e91e63;
+            margin-top: 10px;
+        }
+        .footer {
+            background: #ffffff;
+            color: #000000;
+            text-align: left;
+            padding: 20px 0;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer a {
+            margin: 0 10px;
+        }
+        .footer img {
+            max-width: 100%;
+            height: auto;
+        }
+        .footer button {
+            background: #e91e63;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        @media (max-width: 1024px) {
+            .product-card {
+                width: calc(50% - 40px);
+            }
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 18px;
+            }
+            .product-card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 16px;
+            }
+            .product-card {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        
+        <h1>Catalogo de roupas "programados para casar♥<br>Nos ajude a contruir a mais bela linha de código</h1>
+    </div>
+
+    <div class="container">
+        <div class="products">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/d2yi_wLgWS-medium-bdeefbdefadac.jpg" alt="Produto 1">
+                <h3>Camisa Givenchy</h3>
+                <p>Letreiro emborrachado.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/kJiL1tC_jk-medium-ccfabc.jpg" alt="Produto 2">
+                <h3>Camisa Thommy</h3>
+                <p>Camisa de algodão com estampa emborrachada em gel.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/wZHvdYL2YF-medium-abbbdaffbbefecfdd.jpg" alt="Produto 3">
+                <h3>Camisa Boss</h3>
+                <p>Estampa bordada em couro 3.</p>
+                <p class="price">R$  90,00</p>
+            </div>
+            <!--Produto 4-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/FkNZ5LJw5r-medium-ebccdbdaadcba.jpg" alt="Produto 4">
+                <h3>Camisa Lacoste</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$  90,00</p>
+            </div>
+            <!--produto 5-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/zmTPgoWuqt-medium-dfefeabbfafa.jpg" alt="Produto 5">
+                <h3>Camisa Armani</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+             <!--produto 6-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/J2dGBPKbSe-medium-cbbbfaacfbab.jpg" alt="Produto 6">
+                <h3>Camisa Lacoste</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+             <!--produto 7-->
+             <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/iRWXGq5Wdk-medium-cccbbeceec.jpg" alt="Produto 7">
+                <h3>Camisa Burberry</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+             <!--produto 8-->
+             <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/0fM1Ikak1e-medium-dfdceeeabbefaa.jpg" alt="Produto 8">
+                <h3>Camisa Armani</h3>
+                <p>Descrição do produto 8.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+             <!--produto 9-->
+             <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/TNkQKPIVf-original-ea.jpg" alt="Produto 9">
+                <h3>Camisa Lacoste</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+            <!--produto 10-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/iRWXGq5Wdk-medium-cccbbeceec.jpg https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/FmNqT70-Y-original-afdfabdc.jpg" alt="Produto 10">
+                <h3>Camisa Lacoste</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+            <!--produto 11-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/coT1gOLnP4-medium-dffdfebfcbec.jpg" alt="Produto 11">
+                <h3>Camisa Thommy</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+            <!--produto 12-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/K1JLzhdTs2-medium-fffdbcadefdac.jpg" alt="Produto 12">
+                <h3>Camisa Armani</h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 90,00</p>
+            </div>
+            <!--produto 13-->
+            <div class="product-card">
+                <img src="https://images.tcdn.com.br/img/img_prod/1077980/camisa_polo_hugo_boss_branco_logo_azul_3163_1_eee9c5b91c52402fd9d09aed0578e42d.jpeg" alt="Produto 13">
+                <h3>Polo Boss</h3>
+                <p>Criada em malha piqué de algodão puro.</p>
+                <p class="price">R$ 120,00</p>
+            </div>
+
+            <!--produto 14-->
+            <div class="product-card">
+                <img src="https://static.netshoes.com.br/produtos/camisa-polo-tommy-hilfiger-lisa-basica-masculina/14/941-7652-014/941-7652-014_zoom1.jpg?ts=1695699912&ims=544x" alt="Produto 14">
+                <h3>Polo Thommy</h3>
+                <p>Inspirada no ano em que Tommy Hilfiger projetou sua marca homônima, nossa coleção 1985 oferece ícones da marca com materiais mais sustentáveis..</p>
+                <p class="price">R$120,00</p>
+            </div>
+            <!--produto 15-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/lmL4Lb0SDX-medium-dfeabccaeda.jpg" alt="Produto 15">
+                <h3>Polo Armani</h3>
+                <p>Camisa polo slim fit e logo costurado.</p>
+                <p class="price">R$ 120,00</p>
+            </div>
+            <!--produto 16-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/h0jRD3lLNi-medium-cadcdaf.jpg" alt="Produto 16">
+                <h3>Polo Armani</h3>
+                <p>Camisa polo slim fit e logo costurado.</p>
+                <p class="price">R$ 120,00</p>
+            </div>
+            <!--produto 17-->
+            <div class="product-card">
+                <img src="https://cdn.awsli.com.br/600x1000/1378/1378471/produto/229816571/lacoste-camiseta-polo-l-12-12-branca-ckudbwem2r.png" alt="Produto 17">
+                <h3>Polo lacoste </h3>
+                <p>Camisa de algodão.</p>
+                <p class="price">R$ 120,00</p>
+            </div>
+            <!--produto 18-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/7Pq8ukTaws-medium-bfbadbccfdbedf.jpg" alt="Produto 18" width="600" height="700">
+                <h3>Bermuda tactel DIESEL/HUGO BOSS</h3>
+                <p>Bermuda de tactel.</p>
+                <p class="price">R$ 65,00</p>
+            </div>
+            <!--produto 19-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/j4bfAU2jeK-medium-dcefbbbce.jpg" alt="Produto 19">
+                <h3>Bermuda jeans hugo boss</h3>
+                <p class="price">R$ 125,00</p>
+            </div>
+            <!--produto 20-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/PyARrsV7Ii-medium-ccecacaacaf.jpg" alt="Produto 20">
+                <h3>Bermuda thommy jeans</h3>
+                <p class="price">R$ 125,00</p>
+            </div>
+
+            <!--produto 21-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/EU4dFSOLVl-medium-afeabadfd.jpg" alt="Produto 21">
+                <h3>Bermuda diesel Jeans</h3>
+                <p class="price">R$125,00</p>
+            </div>
+            <!--produto 22-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/e0uhW0iDm-original-cfdbeccbebcbfd.jpg" alt="Produto 22">
+                <h3>Calça Hugo boss preta</h3>
+                <p>Calças esporte fino.</p>
+                <p class="price">R$ 140,00</p>
+            </div>
+            <!--produto 23-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/k9ftIHHjHr-medium-ffdeacfbfe.jpg" alt="Produto 23">
+                <h3>Calça jeans Calvin Klein</h3>
+                <p>Bolso com detalhes e forrada com letreiro da Calvin Klein por dentro.</p>
+                <p class="price">R$ 140,00</p>
+            </div>
+            <!--produto 24-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/Yhz16cTEs-original-bbbfefbdba.jpg" alt="Produto 24">
+                <h3>Calça sarja Calvin Klein </h3>
+                <p class="price">R$ 140,00</p>
+            </div>
+            <!--produto 25-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/mEzxk-a79-original-afeaaabcaedccecade.jpg" alt="Produto 25">
+                <h3>Calça sarja Calvin Klein cinza escura</h3>
+                <p class="price">R$ 140,00</p>
+            </div>
+            <!--produto 26-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/EA7n-Am99u-medium-fbdaefacbccf.jpg" alt="Produto 26">
+                <h3>Calça Hugo boss</h3>
+                <p class="price">R$ 140,00</p>
+            </div>
+            <!--produto 28-->
+            <div class="product-card">
+                <img src="https://mycatalog.sfo3.digitaloceanspaces.com/uploads/65a7a8634f19ba0007611d30/JqHctlTCSk-medium-cdfeddeabfec.jpg" alt="Produto 28 " width="400" height="500">
+                <h3>Moletom Thommy hilfiger</h3>
+                <p class="price">R$ 189,00</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="https://www.instagram.com/programadospcasar/?igsh=OTB1d2hhcDVveWxw">
+            <img src="https://th.bing.com/th/id/OIP.zIajNTOFBjzFWyZ1Jh-H2AHaHa?w=186&h=186&c=7&r=0&o=5&pid=1.7" width="50">
+        </a>
+        <a href="https://www.instagram.com/programadospcasar/?igsh=OTB1d2hhcDVveWxw">
+            <button type="button">Clique aqui</button>
+        </a>
+    </div>
+</body>
+</html>
